@@ -1,0 +1,331 @@
+/* =========================
+   1. Grundinställningar för webbplatsen
+========================= */
+
+body {
+    background-color: #6b0b0c;
+    color: #2d120d;
+    margin: 0;
+    padding: 0;
+    background-image: url("bilder/Kakmonster.png");
+    background-repeat: repeat;
+    background-size: 500px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+/* =========================
+   2. Typografi. Grundinställningar för rubriker och brödtext.
+========================= */
+
+/* Huvudrubrik */
+h1 {
+    font-family: 'Forum', serif;
+    font-size: clamp(60px, 6vw, 100px);
+    font-weight: 400;
+    color: #fff8ca;
+    margin: 0;
+}
+
+/* Grundinställningar för brödtext */
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+/* =========================
+   3. Header. Logotyp och första stora headerbilden.
+========================= */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #6b0b0c;
+}
+
+/* Logotyp */
+.logga {
+    max-width: 100px;
+    min-width: 50px;
+    height: auto;
+    margin: 5px 0;
+}
+
+/* Första stora headerbilden. */
+.headerbild {
+    width: 100%;
+    height: 35vw;
+    max-height: 550px;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Samlar headerbild och bildtext */
+.headerbild-container {
+    position: relative;
+    margin: 0;
+}
+
+/* Bildtext på headerbild */
+.headerbild-container figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 12px;
+    z-index: 2;
+}
+/* =========================
+   4. Navigering. Huvudmeny, länkar och hovring.
+========================= */
+
+/* Navigeringsfältets bakgrund och avgränsning */
+nav {
+    border-bottom: 1px solid #4f0809;
+    background-color: #6b0b0c;
+    padding-top: 30px;
+}
+
+/* Menyns placering och mellanrum mellan länkarna */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    }
+
+    /* Navigeringslänkar */
+nav a {
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff8ca;
+    display: block;
+}
+
+/* Effekt när man hovrar över menyn */
+nav a:hover {
+    background-color: #4f0809;
+    color: #fff8ca;
+    border-radius: 10px;
+}
+
+/* =========================
+   5. Om sju sorters kakor, introduktion. 
+========================= */
+
+/* Sektionens avstånd och nedre avgränsning. */
+#om-kakor {
+    padding: 40px;
+    border-bottom: 1px solid #4f0809;
+}
+
+/* Rubrik för sektionen */
+#om-kakor h2 {
+    font-family: 'Forum', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff8ca;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Beskrivande text */
+#om-kakor p {
+    color: #fff8ca;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* ==================================================
+   6. Recept. Receptbilder, rubriker och receptkort.
+================================================== */
+
+/* Receptsektionens layout */
+.recept {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: stretch;
+}
+
+/* Bildens placering och utrymme */
+.receptbild {
+    width: 45%;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Samlar receptbild och bildtext */
+.bildcontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Receptbild */
+.bildcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Bildtext på receptbilden */
+.bildcontainer figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    z-index: 2;
+}
+
+/* Samlar receptets text och kort. */
+.receptinnehall {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Receptets huvudrubrik */
+
+.receptinnehall h2 {
+    font-family: 'Forum', serif;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff8ca;
+    margin: 0;
+}
+
+/* Beskrivning av receptet */
+.receptinnehall p {
+    font-size: 14px;
+    color: #fff8ca;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+/* Receptkort */
+.receptkort {
+    background-color: #fff8ca;
+    font-size: 16px;
+    color: #2d120d;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* Rubriker i receptkort */
+.receptkort h3,
+.receptkort h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #2d120d;
+    margin-bottom: 5px;
+}
+
+/* Huvudrubriker i receptkort */
+.receptkort h3 {
+    font-size: 18px;
+}
+
+/* Underrubriker i receptkort */
+.receptkort h4 {
+    font-size: 14px;
+}
+
+/* =========================
+   6. Footer. Avslutande information och bild.
+========================= */
+
+/* Footerns bakgrund och övre avgränsning */
+footer {
+    background-color: #6b0b0c;
+    color: #fff8ca;
+    padding: 0px;
+    margin-top: 40px;
+    text-align: left;
+    border-top: 1px solid #4f0809;
+    
+}
+
+/* Rubrik i footern */
+footer h2 {
+    font-family: 'Forum', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff8ca;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding-top: 40px;
+}
+
+/* Brödtext i footern */
+footer p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff8ca;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+/* Tillbaka till toppen */
+footer .till-toppen {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff8ca;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+/* Hovringseffekt på länken */
+footer .till-toppen:hover {
+    background-color: #4f0809;
+    color: #fff8ca;
+    border-radius: 10px;
+}
+
+/* Footerbildens placering */
+.footerbild {
+    position: relative;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+/* Bildtext ovanpå footerbilden */
+.footerbild figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+    z-index: 2;
+}
+
+/* Förhindrar oönskat mellanrum under bilden */
+.footerbild img {
+    display: block;
+}
