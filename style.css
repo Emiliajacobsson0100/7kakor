@@ -172,7 +172,7 @@ nav a:hover {
     margin: 0;
 }
 
-/* Samlar receptbild och bildtext */
+/* Samlar receptbild och bildtext och anpassar bildens bredd och höjd. */
 .bildcontainer {
     position: relative;
     width: 100%;
