@@ -167,14 +167,14 @@ nav a:hover {
 
 /* Bildens placering och utrymme.*/
 .receptbild {
+    position: relative;
     width: 45%;
     flex-shrink: 0;
     margin: 0;
 }
 
-/* Samlar receptbild och bildtext och anpassar bildens bredd och höjd. */
+/* Receptbild ramar/behållare. */
 .bildcontainer {
-    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 /* Bildtext på receptbilden */
-.bildcontainer figcaption {
+.receptbild figcaption {
     position: absolute;
     bottom: 10px;
     left: 10px;
