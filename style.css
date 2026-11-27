@@ -2,6 +2,7 @@
    1. Grundinställningar för webbplatsen
 ========================= */
 
+/* Sidans grundinställningar, bakgrund, avstånd, typsnitt. */
 body {
     background-color: #6b0b0c;
     color: #2d120d;
@@ -9,16 +10,16 @@ body {
     padding: 0;
     background-image: url("bilder/Kakmonster.png");
     background-repeat: repeat;
-    background-size: 500px;
+    background-size: 800px;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /* =========================
    2. Typografi. Grundinställningar för rubriker och brödtext.
 ========================= */
 
-/* Huvudrubrik */
+/* Huvudrubrik och hur den anpassas efter skärmstorlek. */
 h1 {
     font-family: 'Forum', serif;
     font-size: clamp(60px, 6vw, 100px);
@@ -38,19 +39,20 @@ p {
    3. Header. Logotyp och första stora headerbilden.
 ========================= */
 
+/* Inställningar för sidhuvudet. 
+Sticky för att sidhuvudet ska vara kvar när besökaren scrollar ner.*/
 .top-header {
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 0px 20px;
-
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: #6b0b0c;
 }
 
-/* Logotyp */
+/* Logotyp i nvänster hörn.*/
 .logga {
     max-width: 100px;
     min-width: 50px;
@@ -68,13 +70,13 @@ p {
     display: block;
 }
 
-/* Samlar headerbild och bildtext */
+/* Headerbild */
 .headerbild-container {
     position: relative;
     margin: 0;
 }
 
-/* Bildtext på headerbild */
+/* Bildtext ovanpå headerbild */
 .headerbild-container figcaption {
     position: absolute;
     bottom: 15px;
@@ -117,7 +119,7 @@ nav a {
     display: block;
 }
 
-/* Effekt när man hovrar över menyn */
+/* Effekt när man hovrar över navigeringslänkar. */
 nav a:hover {
     background-color: #4f0809;
     color: #fff8ca;
@@ -144,7 +146,7 @@ nav a:hover {
     margin-top: 30px;
 }
 
-/* Beskrivande text */
+/* Brödtexxt */
 #om-kakor p {
     color: #fff8ca;
     margin-top: 0;
@@ -155,7 +157,7 @@ nav a:hover {
    6. Recept. Receptbilder, rubriker och receptkort.
 ================================================== */
 
-/* Receptsektionens layout */
+/* Receptsektionens layout. */
 .recept {
     display: flex;
     gap: 20px;
@@ -163,7 +165,7 @@ nav a:hover {
     align-items: stretch;
 }
 
-/* Bildens placering och utrymme */
+/* Bildens placering och utrymme.*/
 .receptbild {
     width: 45%;
     flex-shrink: 0;
@@ -196,7 +198,7 @@ nav a:hover {
     z-index: 2;
 }
 
-/* Samlar receptets text och kort. */
+/* Samlar receptets text och kort i en lodrät riktining. */
 .receptinnehall {
     display: flex;
     flex-direction: column;
@@ -204,7 +206,6 @@ nav a:hover {
 }
 
 /* Receptets huvudrubrik */
-
 .receptinnehall h2 {
     font-family: 'Forum', serif;
     font-size: 80px;
@@ -221,7 +222,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* Receptkort */
+/* Utseende på receptkorten. */
 .receptkort {
     background-color: #fff8ca;
     font-size: 16px;
@@ -231,7 +232,7 @@ nav a:hover {
     flex: 1;
 }
 
-/* Rubriker i receptkort */
+/* Rubriker i receptkorten. */
 .receptkort h3,
 .receptkort h4 {
     font-family: 'Inter', sans-serif;
@@ -240,12 +241,12 @@ nav a:hover {
     margin-bottom: 5px;
 }
 
-/* Huvudrubriker i receptkort */
+/* Huvudrubriker i receptkorten. */
 .receptkort h3 {
     font-size: 18px;
 }
 
-/* Underrubriker i receptkort */
+/* Underrubriker i receptkorten. */
 .receptkort h4 {
     font-size: 14px;
 }
@@ -254,7 +255,7 @@ nav a:hover {
    6. Footer. Avslutande information och bild.
 ========================= */
 
-/* Footerns bakgrund och övre avgränsning */
+/* Utseende på footer och övre avgränsning */
 footer {
     background-color: #6b0b0c;
     color: #fff8ca;
@@ -270,8 +271,6 @@ footer h2 {
     font-family: 'Forum', serif;
     font-size: 30px;
     font-weight: 400;
-    color: #fff8ca;
-    text-align: left;
     margin-top: 0;
     margin-bottom: 10px;
     margin-left: 40px;
@@ -280,34 +279,27 @@ footer h2 {
 
 /* Brödtext i footern */
 footer p {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
     line-height: 1.6;
-    color: #fff8ca;
-    text-align: left;
     margin-bottom: 15px;
     margin-left: 40px;
 }
 
-/* Tillbaka till toppen */
+/* Tillbaka till toppen länk. */
 footer .till-toppen {
     display: inline-block;
     padding: 10px 15px;
     border-radius: 10px;
     text-decoration: none;
     color: #fff8ca;
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
 }
 
-/* Hovringseffekt på länken */
+/* Hovringseffekt på länken. */
 footer .till-toppen:hover {
     background-color: #4f0809;
-    color: #fff8ca;
-    border-radius: 10px;
 }
 
-/* Footerbildens placering */
+/* Footerbildens placering. */
 .footerbild {
     position: relative;
     display: block;
